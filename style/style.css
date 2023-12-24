@@ -20,7 +20,7 @@ body {
  font-family: "Arial",sans-serif;
  font-size: 16px;
  line-height: 1.5;
- background-color: #fff;
+ background-color:  #F1F4FF;
  color: #222;
 }
 
@@ -30,15 +30,220 @@ img {
 }
 
 /* CONTAINER */
+
 .container {
 width: 100%;
-max-width: 1200;
+max-width: 1240px;
 margin-right: auto;
 margin-left: auto;
-padding-left: 50px;
-padding-right: 50px;
+padding-left: 20px;
+padding-right: 20px;
 }
 
 .main-content {
   flex-grow: 1;
+}
+/* FONTS*/
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*INTRO FORM LEFT */
+.intro-form {
+  background: #F1F4FF;
+}
+.control-intro {
+  display: flex;
+  align-items: center;
+}
+
+.intro-form-left {
+  width: 570px;
+  height: 640px;
+  border-radius: 20px;
+  margin-top: 80px;
+  margin-right: 12px;
+  margin-bottom: 80px;
+
+  background-image: url("../img/Rectangle\ 6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.left-mini-box {
+  margin: 0%;
+  margin-top: 60px;
+  margin-bottom: 65px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  display: inline-flex;
+  padding: 5px 15px;
+  align-items: flex-start;
+  border-radius: 41px;
+  border: 1px solid #FFF;
+  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.00);
+  border-radius: 20px;
+}
+.left-heading {
+  margin: 0%;
+  margin-bottom: 25px;
+  width: 389px;
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 127.778% */
+}
+.left-text {
+  margin: 0%;
+  width: 347px;
+  color: #FFF;
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.extra-box {
+  margin-left: 60px;
+  margin-bottom: 203px;
+}
+.left-footer {
+  background-color: rgba(77, 196, 144, 1);
+  width: 570px;
+  height: 80px;
+  text-align: center;
+  border-radius: 0px 0px 20px 20px;
+
+
+}
+.left-footer-link {
+  line-height: 80px;
+  text-decoration: none;
+  color: #FFF;
+}
+.left-footer-link-div {
+}
+.left-footer-link-div-text-1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+.left-footer-link-div-text-2 {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+
+
+
+/* INTRO FORM RIGHT*/
+
+.intro-form-right {
+  display: inline-block;
+  width: 570px;
+  height: 640px;
+  border-radius: 20px;
+  background: #FFF;
+  padding: 55px 60px 40px 60px;
+}
+.right-heading {
+  margin: 0;
+  width: 428px;
+  color: #000;
+  font-family: 'Inter';
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px; /* 131.25% */
+}
+.right-general-froms {
+  width: 450px;
+  height: 68px;
+  border: 0;
+  border-bottom: 1px solid #555;
+}
+
+.right-form-button {
+  margin-top: 63px;
+  margin-bottom: 8px;
+  width: 450px;
+  padding: 20px 149px;
+  border-radius: 10px;
+  background: #655AF2;
+  border: 0;
+
+  color: #FFF;
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+.right-form-terms-div {
+  display: flex;
+  align-items: center;
+
+}
+.right-form-terms-text {
+  margin: 0%;
+  margin-right: 3px;
+  margin-left: auto;
+  color: #555;
+  font-family: "Inter";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px; /* 136.364% */
+}
+.right-form-terms-services {
+  margin: 0;
+  margin-right: auto;
+  color: #F03535;
+  font-family: "Inter";
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 15px;
+  text-decoration-line: underline;
 }
